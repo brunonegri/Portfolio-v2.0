@@ -6,16 +6,16 @@ import Whatsapp from '../data/images/Whatsapp.png'
 function Hero () {
 	const Iam = "Hello, I'm"
 	return (
-		<section className='mt-[350px]'>
-			<div className='mx-48 my-56'>
+		<section className='mt-[200px]'>
+			<div className='mx-48'>
 				<div>
 					<p className='text-2xl text-white'>{Iam}</p>
-					<h4 className='text-[86px] text-white'>Bruno Negri</h4>
+					<h4 className='text-[86px] text-[#4b8d91]'>Bruno Negri</h4>
 					<p className='text-2xl text-white mt-2'>
           FRONT-END WEB DEVELOPER
 					</p>
 				</div>
-				<button className="px-7 py-3 bg-zinc-600 rounded-md text-white ml-3 mt-6">
+				<button className="px-7 py-3 bg-[#437c80] rounded-md text-white ml-3 mt-6">
           Download Resume
 				</button>
 				<div className="mt-7">

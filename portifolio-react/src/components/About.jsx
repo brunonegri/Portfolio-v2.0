@@ -6,10 +6,10 @@ import Brnpic from '../data/images/Brnpic.png'
 function About () {
 	const Iam = "I'm"
 	return (
-		<div className='flex h-[400px] justify-center mx-16 mt-16 '>
+		<div className='flex h-[400px] justify-center mx-16 mt-[100px] '>
 			<div className='flex h-full justify-between align-middle'>
-				<div className='w-[60%] text-white '>
-					<h1 className='text-3xl text-center mb-7'>ABOUT</h1>
+				<div className='w-[60%] ml-10 text-white '>
+					<h1 className='text-3xl text-center mb-7 text-[#4b8d91]'>ABOUT</h1>
 					<p className='text-2xl'>
 						<p className='mb-3'>
 							{`${Iam} a Front-End Web Developer. Passionate about technology, my
@@ -24,7 +24,7 @@ function About () {
 					</p>
 				</div>
 				<img
-					className='h-80 rounded mt-5 mx-auto'
+					className='h-80 rounded-full border border-[#588E91] mt-5 mx-auto'
 					src={Brnpic}
 					alt='BrunoPic'
 				/>

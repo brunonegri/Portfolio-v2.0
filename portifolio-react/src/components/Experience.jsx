@@ -10,23 +10,23 @@ import {
 
 function Experience () {
 	return (
-		<section className='flex flex-col justify-center w-full border-red-600 border-2 '>
-			<div className='flex mt-12 justify-between mx-36 align-middle'>
+		<section className='flex flex-col justify-center w-full '>
+			<div className='flex mt-[250px] justify-between mx-36 align-middle'>
 				<div className='text-white text-center'>
-					<h1 className=' mb-4 justify-center text-3xl'>Experiences</h1>
+					<h1 className=' mb-4 justify-center text-3xl text-[#4b8d91]'>Experiences</h1>
 					<p className='text-xl'>Soon</p>
 					<p className='text-xl'>Feel free to checkout my projects below</p>
 				</div>
 				<div className='flex flex-col flex-nowrap'>
-					<h1 className=' mb-4 justify-center text-3xl text-center text-white'>
+					<h1 className=' mb-4 justify-center text-3xl text-center text-[#4b8d91]'>
 						Stacks
 					</h1>
 					<div className='flex flex-nowrap align-middle'>
-						<FontAwesomeIcon icon={faJs} className='h-24 text-white' />
-						<FontAwesomeIcon icon={faHtml5} className='h-24 text-white' />
-						<FontAwesomeIcon icon={faCss3Alt} className='h-24 text-white' />
-						<FontAwesomeIcon icon={faReact} className='h-24 text-white' />
-						<FontAwesomeIcon icon={faVuejs} className='h-24 text-white' />
+						<FontAwesomeIcon icon={faJs} className='h-24 text-white hover:text-[#437c80] hover:h-28' />
+						<FontAwesomeIcon icon={faHtml5} className='h-24 text-white hover:text-[#437c80] hover:h-28' />
+						<FontAwesomeIcon icon={faCss3Alt} className='h-24 text-white hover:text-[#437c80] hover:h-28' />
+						<FontAwesomeIcon icon={faReact} className='h-24 text-white hover:text-[#437c80] hover:h-28' />
+						<FontAwesomeIcon icon={faVuejs} className='h-24 text-white hover:text-[#437c80] hover:h-28' />
 						{/* <img src={faJs} alt="stacks" /> */}
 					</div>
 				</div>
