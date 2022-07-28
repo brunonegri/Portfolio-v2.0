@@ -1,11 +1,9 @@
-import React from 'react';
+import React from 'react'
 // import './index.css';
-import FotoRecortada from '../data/images/FotoRecortada.png'; 
-import Header from '../components/Header';
-
+import Header from '../components/Header'
 
 class Home extends React.Component {
-  render() {
+  render () {
     return (
       <div>
         <Header />
@@ -87,8 +85,8 @@ class Home extends React.Component {
           </div>
     </footer> */}
       </div>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home

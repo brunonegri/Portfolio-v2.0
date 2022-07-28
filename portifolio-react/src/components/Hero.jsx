@@ -1,28 +1,37 @@
-import React from 'react';
-import FotoRecortada from '../data/images/FotoRecortada.png';
+import React from 'react'
+import Github from '../data/images/Github.png'
+import Linkedin from '../data/images/Linkedin.png'
+import Whatsapp from '../data/images/Whatsapp.png'
 
-function Hero() {
+function Hero () {
+	const Iam = "Hello, I'm"
 	return (
-		<section className='mt-[130px]'>
-			<img
-				className='rounded-[50%] h-[500px] bg-zinc-800'
-				src={FotoRecortada}
-				alt='BrunoNegri'
-			/>
-			<div class='about'>
+		<section className='mt-[350px]'>
+			<div className='mx-48 my-56'>
 				<div>
-					<h4 class='descricao'>Hello World</h4>
+					<p className='text-2xl text-white'>{Iam}</p>
+					<h4 className='text-7xl text-white'>Bruno Negri</h4>
+					<p className='text-2xl text-white mt-2'>
+          FRONT-END WEB DEVELOPER
+					</p>
 				</div>
-				<p class='descricao'>
-					Muito prazer me chamo Bruno Negri, brasileiro, 26 anos, casado, from
-					Piracicaba SP.
-					<br />
-					Apaixonado por minha familia, tecnologia, música, artes e jogos
-					Estudante de desenvolvimento Web na Trybe!
-				</p>
+				<button className="px-7 py-3 bg-zinc-600 rounded-md text-white ml-3 mt-6">
+          Download Resume
+				</button>
+				<div className="mt-7">
+					<button className="mx-3">
+						<img src={Github} alt="GithubIcon" />
+					</button>
+					<button className="mx-3">
+						<img src={Linkedin} alt="GithubIcon" />
+					</button>
+					<button className="mx-3">
+						<img src={Whatsapp} alt="GithubIcon" />
+					</button>
+				</div>
 			</div>
 		</section>
-	);
+	)
 }
 
-export default Hero;
+export default Hero
