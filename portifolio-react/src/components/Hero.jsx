@@ -10,7 +10,7 @@ function Hero () {
 			<div className='mx-48 my-56'>
 				<div>
 					<p className='text-2xl text-white'>{Iam}</p>
-					<h4 className='text-7xl text-white'>Bruno Negri</h4>
+					<h4 className='text-[86px] text-white'>Bruno Negri</h4>
 					<p className='text-2xl text-white mt-2'>
           FRONT-END WEB DEVELOPER
 					</p>

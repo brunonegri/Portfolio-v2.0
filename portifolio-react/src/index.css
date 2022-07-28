@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
-    background: url('./data/images/Wallpaper.png');
+    background: url('./data/images/Wallpaper2.png');
     background-repeat: no-repeat;
+    background-size: cover;
 }
