@@ -1,7 +1,6 @@
 import React from 'react'
-import Github from '../data/images/Github.png'
-import Linkedin from '../data/images/Linkedin.png'
-import Whatsapp from '../data/images/Whatsapp.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 function Hero () {
 	const Iam = "Hello, I'm"
@@ -15,18 +14,25 @@ function Hero () {
           FRONT-END WEB DEVELOPER
 					</p>
 				</div>
-				<button className="px-7 py-3 bg-[#437c80] rounded-md text-white ml-3 mt-6">
+				<button
+					className="px-7 py-3 opacity-60 bg-[#437c80] hover:opacity-100 hover:px-8 hover:py-[14px] transition-[0.5s] rounded-md text-white text-[18px] ml-3 mt-6">
           Download Resume
 				</button>
 				<div className="mt-7">
 					<button className="mx-3">
-						<img src={Github} alt="GithubIcon" />
+						<FontAwesomeIcon icon={faGithub}
+							className='h-12  ml-2 text-white hover:text-[#437c80] transition-[0.5s] hover:h-[52px]'
+						/>
 					</button>
 					<button className="mx-3">
-						<img src={Linkedin} alt="GithubIcon" />
+						<FontAwesomeIcon icon={faLinkedin}
+							className='h-12 ml-1 text-white hover:text-[#437c80] transition-[0.5s] hover:h-[52px]'
+						/>
 					</button>
 					<button className="mx-3">
-						<img src={Whatsapp} alt="GithubIcon" />
+						<FontAwesomeIcon icon={faWhatsapp}
+							className='h-12  ml-1 text-white hover:text-[#437c80] transition-[0.5s] hover:h-[52px]'
+						/>
 					</button>
 				</div>
 			</div>
