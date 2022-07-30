@@ -1,7 +1,8 @@
 import React from 'react'
-import logoBnWhite from '../data/images/logoBnWhite.png'
+// import logoBnWhite from '../data/images/logoBnWhite.png'
 import useScrollDirection from '../services/scrollhook'
-// import GifBnWhite from '../data/images/GifBnWhite.gif'
+import GifBnWhite from '../data/images/GifBnWhite.gif'
+import BnWhite from '../data/images/BnWhite.png'
 
 function Header () {
 	const scrollDirection = useScrollDirection()
@@ -10,7 +11,10 @@ function Header () {
 		<header id='header' className={`flex w-full justify-center h-[100px] z-10 drop-shadow-lg bg-[#464E59] sticky ${scrollDirection === 'down' ? '-top-24' : 'top-[40px]'}`}>
 			<div className='px-60 flex justify-between items-center w-full h-full'>
 				<a href="#HOME">
-					<img className='h-20' src={logoBnWhite} alt='Logo Bruno Negri' />
+					<img className='h-20'
+						onMouseOver={e => (e.currentTarget.src = GifBnWhite)}
+						onMouseOut={e => (e.currentTarget.src = BnWhite)}
+						src={BnWhite} alt='Logo Bruno Negri' />
 				</a>
 				<nav className='flex text-white'>
 					<a href='#HOME'>
