@@ -32,7 +32,7 @@ function Experience () {
 						Skills
 					</h1>
 					<div className='flex justify-center items-center'>
-						<FontAwesomeIcon className='h-10 ml-5 text-white hover:text-[#437c80] transition-[0.5s]' icon={faCircleArrowLeft} onClick={handleLeftClick }/>
+						<FontAwesomeIcon className='h-10 cursor-pointer ml-5 text-white hover:text-[#437c80] transition-[0.5s]' icon={faCircleArrowLeft} onClick={handleLeftClick }/>
 
 						<div ref={carousel} className='flex flex-col flex-nowrap max-w-3/5 overflow-auto overflow-hidden'>
 							<div className='flex flex-nowrap align-middle'>
@@ -45,7 +45,7 @@ function Experience () {
 								<img className='svghover h-24 ml-5 transition-[0.5s] hover:h-28' src={redux} alt="reduxalt" />
 							</div>
 						</div>
-						<FontAwesomeIcon className='h-10 ml-5 text-white hover:text-[#437c80] transition-[0.5s]' icon={faCircleArrowRight} onClick={handleRightClick} />
+						<FontAwesomeIcon className='h-10 cursor-pointer ml-5 text-white hover:text-[#437c80] transition-[0.5s]' icon={faCircleArrowRight} onClick={handleRightClick} />
 					</div>
 				</div>
 			</div>

@@ -23,21 +23,21 @@ function Hero () {
 					</button>
 				</a>
 				<div className="mt-7">
-					<button className="mx-3">
+					<a href="https://github.com/brunonegri" target='_blank' className="mx-3" rel="noreferrer">
 						<FontAwesomeIcon icon={faGithub}
 							className='h-12  ml-2 text-white hover:text-[#437c80] transition-[0.5s] hover:h-[52px]'
 						/>
-					</button>
-					<button className="mx-3">
+					</a>
+					<a href="https://www.linkedin.com/in/bruno-negri-dev/" target='_blank' className="mx-3" rel="noreferrer">
 						<FontAwesomeIcon icon={faLinkedin}
 							className='h-12 ml-1 text-white hover:text-[#437c80] transition-[0.5s] hover:h-[52px]'
 						/>
-					</button>
-					<button className="mx-3">
+					</a>
+					<a href='https://wa.link/prlfvr' target='_blank' className="mx-3" rel="noreferrer">
 						<FontAwesomeIcon icon={faWhatsapp}
 							className='h-12  ml-1 text-white hover:text-[#437c80] transition-[0.5s] hover:h-[52px]'
 						/>
-					</button>
+					</a>
 				</div>
 			</div>
 		</section>
