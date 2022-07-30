@@ -5,7 +5,17 @@
 body {
     background: url('./data/images/Wallpaper3.png');
     background-repeat: no-repeat;
-    
     width: 100%;
     min-height: 100vh;
 }
+
+.svghover:hover {
+    filter: invert(45%) sepia(39%) saturate(402%) hue-rotate(135deg) brightness(89%) contrast(96%);
+}
+
+.anchor{
+    display: block;
+    height: 250px; /*same height as header*/
+    margin-top: -250px; /*same height as header*/
+    visibility: hidden;
+  }

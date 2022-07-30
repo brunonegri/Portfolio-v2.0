@@ -5,7 +5,8 @@ import {
 	faReact,
 	faVuejs,
 	faLinux,
-	faGitAlt
+	faGitAlt,
+	faGithub
 } from '@fortawesome/free-brands-svg-icons'
 
 const iconsArray = [
@@ -15,7 +16,8 @@ const iconsArray = [
 	faReact,
 	faVuejs,
 	faLinux,
-	faGitAlt
+	faGitAlt,
+	faGithub
 ]
 
 export default iconsArray

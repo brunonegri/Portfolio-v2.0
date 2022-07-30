@@ -6,6 +6,7 @@ function Hero () {
 	const Iam = "Hello, I'm"
 	return (
 		<section className='mt-[220px]'>
+			<span className="anchor" id='HOME'></span>
 			<div className='mx-48'>
 				<div>
 					<p className='text-2xl text-white'>{Iam}</p>
