@@ -5,7 +5,7 @@ import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-i
 function Hero () {
 	const Iam = "Hello, I'm"
 	return (
-		<section className='mt-[200px]'>
+		<section className='mt-[220px]'>
 			<div className='mx-48'>
 				<div>
 					<p className='text-2xl text-white'>{Iam}</p>

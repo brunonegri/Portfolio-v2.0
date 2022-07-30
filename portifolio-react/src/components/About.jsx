@@ -6,7 +6,7 @@ import Brnpic from '../data/images/Brnpic.png'
 function About () {
 	const Iam = "I'm"
 	return (
-		<div className='flex h-[400px] justify-center mx-16 mt-[100px] '>
+		<div className='flex h-[400px] justify-center mx-16 mt-[160px] '>
 			<div className='flex h-full justify-between align-middle'>
 				<div className='w-[60%] ml-10 text-white '>
 					<h1 className='text-3xl text-center mb-7 text-[#4b8d91]'>About</h1>
