@@ -19,3 +19,18 @@ body {
     margin-top: -250px; /*same height as header*/
     visibility: hidden;
   }
+
+  ::-webkit-scrollbar-track {
+    background: #313740;
+    opacity: 0.7;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(136, 136, 136);
+    border: 3px solid #313740;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar{
+    width: 12px;
+  }

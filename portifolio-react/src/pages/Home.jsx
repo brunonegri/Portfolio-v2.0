@@ -4,6 +4,7 @@ import Experience from '../components/Experience'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
+import Footer from '../components/Footer'
 import Loading from './Loading'
 
 function Home () {
@@ -19,12 +20,13 @@ function Home () {
 		<main >
 			{load
 				? <Loading />
-				: <div className="drop-shadow-lg w-9/12 mx-auto ">
+				: <div className="drop-shadow-lg w-9/12 mx-auto h-[100vh] ">
 					<Header />
 					<Hero />
 					<Experience />
 					<About />
 					<Projects />
+					<Footer />
 				</div>
 			}
 		</main>

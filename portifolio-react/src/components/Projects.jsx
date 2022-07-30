@@ -25,20 +25,22 @@ function Projects () {
 			<div className='flex items-center'>
 				<FontAwesomeIcon className='h-10 ml-5 text-white hover:text-[#437c80] transition-[0.5s] cursor-pointer' icon={faCircleArrowLeft} onClick={handleLeftClick }/>
 				{projectsData.map((e, i) =>
-					<div key={i} className="flex h-[400px] w-full justify-around border border-red-700">
-						<div className="flex w-[40%] items-center justify-center border border-red-700">
-							<img className='h-[400px]' src={e.thumb} alt="projectthumb" />
+					<div key={i} className="flex h-[400px] w-full justify-around bg-[#313740] drop-shadow-xl">
+						<div className="flex my-7 w-[40%] items-center justify-center ">
+							<img className='h-[100%]' src={e.thumb} alt="projectthumb" />
 						</div>
-						<div>
-							<p>{e.name}</p>
-							<p>{e.description}</p>
-							<p>{e.Stacks}</p>
-							<a href={e.site} target='_blank' rel="noreferrer">
-								<FontAwesomeIcon href={e.site} target='_blank' className='h-10 ml-5 text-white hover:text-[#437c80] transition-[0.5s]' icon={faLink}/>
-							</a>
-							<a href={e.github} target='_blank' rel="noreferrer">
-								<FontAwesomeIcon href={e.github} target='_blank' className='h-10 ml-5 text-white hover:text-[#437c80] transition-[0.5s]' icon={faGithub}/>
-							</a>
+						<div className=' w-[40%] text-3xl flex flex-col justify-center text-center mb-7'>
+							<p className='text-3xl text-center my-7 text-white'>{e.name}</p>
+							<p className='mb-3 text-white text-2xl'>{e.description}</p>
+							<p className='mb-3 text-white text-2xl'>{e.Stacks}</p>
+							<div className='mt-7'>
+								<a href={e.site} target='_blank' rel="noreferrer">
+									<FontAwesomeIcon href={e.site} target='_blank' className='h-10 ml-5 text-white hover:text-[#437c80] transition-[0.5s]' icon={faLink}/>
+								</a>
+								<a href={e.github} target='_blank' rel="noreferrer">
+									<FontAwesomeIcon href={e.github} target='_blank' className='h-10 ml-5 text-white hover:text-[#437c80] transition-[0.5s]' icon={faGithub}/>
+								</a>
+							</div>
 						</div>
 					</div>
 				)}

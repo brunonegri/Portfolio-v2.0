@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 // import logoBnWhite from '../data/images/logoBnWhite.png'
 import useScrollDirection from '../services/scrollhook'
 import GifBnWhite from '../data/images/GifBnWhite.gif'
@@ -6,12 +6,33 @@ import BnWhite from '../data/images/BnWhite.png'
 
 function Header () {
 	const scrollDirection = useScrollDirection()
+	const [show, setShow] = useState(true)
+	const controlHeader = () => {
+		if (window.scrollY > 100) {
+			setShow(false)
+		} else {
+			setShow(true)
+		}
+	}
+
+	useEffect(() => {
+		window.addEventListener('scroll', controlHeader)
+		console.log(show)
+		return () => {
+			window.removeEventListener('scroll', controlHeader)
+		}
+	}, [])
+
+	// show ? '-top-28' : 'top-[40px]'
+
+	// {scrollDirection === 'down' ? '-top-28' : 'top-[40px]'} transition-all duration-500`}
 
 	return (
-		<header id='header' className={`flex w-full justify-center h-[100px] z-10 drop-shadow-lg bg-[#464E59] sticky ${scrollDirection === 'down' ? '-top-24' : 'top-[40px]'}`}>
+		<header id='header' className={`flex w-full justify-center h-[100px] z-10 drop-shadow-lg bg-[#464E59] sticky ${scrollDirection === 'up' ? 'top-[40px]' : '-top-28'} transition-all duration-500`}>
 			<div className='px-60 flex justify-between items-center w-full h-full'>
 				<a href="#HOME">
 					<img className='h-20'
+						onClick={() => { window.location.reload() }}
 						onMouseOver={e => (e.currentTarget.src = GifBnWhite)}
 						onMouseOut={e => (e.currentTarget.src = BnWhite)}
 						src={BnWhite} alt='Logo Bruno Negri' />
