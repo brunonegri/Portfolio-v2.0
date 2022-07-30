@@ -9,7 +9,9 @@ function Header () {
 	return (
 		<header id='header' className={`flex w-full justify-center h-[100px] z-10 drop-shadow-lg bg-[#464E59] sticky ${scrollDirection === 'down' ? '-top-24' : 'top-[40px]'}`}>
 			<div className='px-60 flex justify-between items-center w-full h-full'>
-				<img className='h-20' src={logoBnWhite} alt='Logo Bruno Negri' />
+				<a href="#HOME">
+					<img className='h-20' src={logoBnWhite} alt='Logo Bruno Negri' />
+				</a>
 				<nav className='flex text-white'>
 					<a href='#HOME'>
 						<p className='mx-2 text-xl hover:text-[#437c80]'>

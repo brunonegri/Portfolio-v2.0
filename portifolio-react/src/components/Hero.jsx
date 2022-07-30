@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import Resume from '../data/Resume.pdf'
 
 function Hero () {
 	const Iam = "Hello, I'm"
@@ -15,10 +16,12 @@ function Hero () {
           FRONT-END WEB DEVELOPER
 					</p>
 				</div>
-				<button
-					className="px-7 py-3 opacity-60 bg-[#437c80] hover:opacity-100 hover:px-8 hover:py-[14px] transition-[0.5s] rounded-md text-white text-[18px] ml-3 mt-6">
+				<a href={Resume} target='_blank' rel="noreferrer">
+					<button
+						className="px-7 py-3 opacity-60 bg-[#437c80] hover:opacity-100 hover:px-8 hover:py-[14px] transition-[0.5s] rounded-md text-white text-[18px] ml-3 mt-6">
           Download Resume
-				</button>
+					</button>
+				</a>
 				<div className="mt-7">
 					<button className="mx-3">
 						<FontAwesomeIcon icon={faGithub}

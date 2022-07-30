@@ -27,7 +27,7 @@ function Experience () {
 					<p className='text-xl'>Soon</p>
 					<p className='text-xl'>Feel free to checkout my projects below</p>
 				</div>
-				<div className='w-[48%]'>
+				<div className='w-[47%]'>
 					<h1 className=' mb-4 justify-center text-3xl text-center text-[#4b8d91]'>
 						Skills
 					</h1>

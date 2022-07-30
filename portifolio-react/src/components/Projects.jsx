@@ -27,7 +27,7 @@ function Projects () {
 				{projectsData.map((e, i) =>
 					<div key={i} className="flex h-[400px] w-full justify-around border border-red-700">
 						<div className="flex w-[40%] items-center justify-center border border-red-700">
-							<img className='h-[350px]' src={e.thumb} alt="projectthumb" />
+							<img className='h-[400px]' src={e.thumb} alt="projectthumb" />
 						</div>
 						<div>
 							<p>{e.description}</p>
