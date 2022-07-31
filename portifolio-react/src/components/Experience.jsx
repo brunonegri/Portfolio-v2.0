@@ -4,6 +4,7 @@ import { faCircleArrowLeft, faCircleArrowRight } from '@fortawesome/free-solid-s
 import jestsvg from '../data/images/jestsvg.svg'
 import iconsArray from '../services/icons'
 import redux from '../data/images/redux.svg'
+import tailwindicon from '../data/images/tailwindicon.svg'
 
 function Experience () {
 	const carousel = useRef(null)
@@ -23,7 +24,7 @@ function Experience () {
 			<span className="anchorEx" id='EXPERIENCES'></span>
 			<div className='flex flex-col justify-center mx-36 items-center'>
 				<div className='text-white text-center'>
-					<h1 className=' mb-4 justify-center text-4xl text-[#4b8d91]'>Experiences</h1>
+					<h1 className=' mb-4 mt-[70px] justify-center text-4xl text-[#4b8d91]'>Experiences</h1>
 					<p className='text-xl'>Soon</p>
 					<p className='text-xl'>Feel free to checkout my projects below</p>
 				</div>
@@ -38,11 +39,12 @@ function Experience () {
 							<div className='flex flex-nowrap align-middle'>
 								{iconsArray.map((e, i) =>
 									<FontAwesomeIcon key={i} icon={e}
-										className='h-24 ml-5 text-white hover:text-[#437c80] transition-all duration-500 hover:h-28'
+										className='h-24 ml-5 text-white hover:text-[#437c80] transition-all duration-500 hover:h-[99px]'
 									/>
 								)}
-								<img className='svghover h-24 ml-5 transition-all duration-500 hover:h-28' src={jestsvg} alt="stack" />
-								<img className='svghover h-24 ml-5 transition-all duration-500 hover:h-28' src={redux} alt="reduxalt" />
+								<img className='svghover h-[90px] ml-5 transition-all duration-500 hover:h-[92px]' src={jestsvg} alt="stack" />
+								<img className='svghover h-[90px] ml-5 transition-all duration-500 hover:h-[92px]' src={redux} alt="reduxalt" />
+								<img className='svghover h-[90px] ml-5 transition-all duration-500 hover:h-[92px]' src={tailwindicon} alt="tailwindalt" />
 							</div>
 						</div>
 						<FontAwesomeIcon className='h-10 cursor-pointer ml-5 text-white hover:text-[#437c80] transition-all duration-500' icon={faCircleArrowRight} onClick={handleRightClick} />

@@ -13,7 +13,7 @@ function Hero () {
 					<p className='text-2xl text-white'>{Iam}</p>
 					<h4 className='text-[86px] text-[#4b8d91]'>Bruno Negri</h4>
 					<p className='text-2xl text-white mt-2'>
-          FRONT-END WEB DEVELOPER
+          FULL STACK WEB DEVELOPER
 					</p>
 				</div>
 				<a href={Resume} target='_blank' rel="noreferrer">

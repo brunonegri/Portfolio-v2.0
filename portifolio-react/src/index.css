@@ -34,8 +34,8 @@ body {
 
 .anchorEx{
   display: block;
-  height: 280px; /*same height as header*/
-  margin-top: -280px; /*same height as header*/
+  height: 240px; /*same height as header*/
+  margin-top: -240px; /*same height as header*/
   visibility: hidden;
 }
 
