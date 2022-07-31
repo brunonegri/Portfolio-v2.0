@@ -19,20 +19,20 @@ function Experience () {
 	}
 
 	return (
-		<section className='flex flex-col items-center justify-center w-full '>
-			<span className="anchor" id='EXPERIENCES'></span>
-			<div className='flex mt-[310px] justify-between mx-36 align-middle'>
+		<section className='flex min-h-[930px] flex-col items-center justify-center w-full '>
+			<span className="anchorEx" id='EXPERIENCES'></span>
+			<div className='flex flex-col justify-center mx-36 items-center'>
 				<div className='text-white text-center'>
-					<h1 className=' mb-4 justify-center text-3xl text-[#4b8d91]'>Experiences</h1>
+					<h1 className=' mb-4 justify-center text-4xl text-[#4b8d91]'>Experiences</h1>
 					<p className='text-xl'>Soon</p>
 					<p className='text-xl'>Feel free to checkout my projects below</p>
 				</div>
-				<div className='w-[47%]'>
-					<h1 className=' mb-4 justify-center text-3xl text-center text-[#4b8d91]'>
+				<div className='w-[49%]'>
+					<h1 className=' mb-4 mt-14 justify-center text-4xl text-center text-[#4b8d91]'>
 						Skills
 					</h1>
 					<div className='flex justify-center items-center'>
-						<FontAwesomeIcon className='h-10 cursor-pointer ml-5 text-white hover:text-[#437c80] transition-all duration-500' icon={faCircleArrowLeft} onClick={handleLeftClick }/>
+						<FontAwesomeIcon className='h-10 cursor-pointer mr-5 text-white hover:text-[#437c80] transition-all duration-500' icon={faCircleArrowLeft} onClick={handleLeftClick }/>
 
 						<div ref={carousel} className='flex flex-col flex-nowrap max-w-3/5 overflow-auto overflow-hidden'>
 							<div className='flex flex-nowrap align-middle'>

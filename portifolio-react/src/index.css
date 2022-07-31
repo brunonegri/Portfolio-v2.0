@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  min-height: 100%;
+}
+
 body {
-    background: url('./data/images/Wallpaper3.png');
+    background: url('./data/images/BackgroundFinal.png');
+    background-color: #313740;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 .svghover:hover {
@@ -15,10 +20,26 @@ body {
 
 .anchor{
     display: block;
-    height: 250px; /*same height as header*/
-    margin-top: -250px; /*same height as header*/
+    height: 500px; /*same height as header*/
+    margin-top: -500px; /*same height as header*/
     visibility: hidden;
   }
+
+.anchorAbout {
+  display: block;
+  height: 40px; /*same height as header*/
+  margin-top: -40px; /*same height as header*/
+  visibility: hidden;
+}
+
+.anchorEx{
+  display: block;
+  height: 280px; /*same height as header*/
+  margin-top: -280px; /*same height as header*/
+  visibility: hidden;
+}
+
+
 
   ::-webkit-scrollbar-track {
     background: #313740;

@@ -6,7 +6,7 @@ import Resume from '../data/Resume.pdf'
 function Hero () {
 	const Iam = "Hello, I'm"
 	return (
-		<section className='mt-[260px]'>
+		<section className='min-h-[870px] flex items-center'>
 			<span className="anchor" id='HOME'></span>
 			<div className='mx-48'>
 				<div>

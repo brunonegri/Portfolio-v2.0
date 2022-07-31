@@ -19,11 +19,11 @@ function Projects () {
 		carousel.current.scrollLeft += carousel.current.offsetWidth
 	}
 	return (
-		<section className="h-[540px] mt-[90px]">
-			<span className="anchor" id='PROJECTS'></span>
-			<h1 className='text-3xl text-center mb-9 text-[#4b8d91]'>Projects</h1>
+		<section className="min-h-[850px] mt-[90px] items-center">
+			<span className="anchorAbout" id='PROJECTS'></span>
+			<h1 className='text-4xl text-center mt-[190px] mb-9 text-[#4b8d91]'>Projects</h1>
 			<div className='flex items-center'>
-				<FontAwesomeIcon className='h-10 ml-5 text-white hover:text-[#437c80] transition-[0.5s] cursor-pointer' icon={faCircleArrowLeft} onClick={handleLeftClick }/>
+				<FontAwesomeIcon className='h-10 mr-5 text-white hover:text-[#437c80] transition-[0.5s] cursor-pointer' icon={faCircleArrowLeft} onClick={handleLeftClick }/>
 				{projectsData.map((e, i) =>
 					<div key={i} className="flex h-[400px] w-full justify-around bg-[#313740] drop-shadow-xl">
 						<div className="flex my-7 w-[40%] items-center justify-center ">

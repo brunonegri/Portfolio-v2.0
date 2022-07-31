@@ -1,16 +1,16 @@
 import React from 'react'
 // import FotoRecortada from '../data/images/FotoRecortada.png'
-import Brnpic from '../data/images/Brnpic.png'
+// import Brnpic from '../data/images/Brnpic.png'
 // import Bruno from '../data/images/Bruno.png'
+import test from '../data/images/test.png'
 
 function About () {
 	const Iam = "I'm"
 	return (
-		<section className='flex h-[400px] justify-center mx-16 mt-[160px] '>
-			<span className="anchor" id='ABOUT'></span>
-			<div className='flex h-full justify-between align-middle'>
+		<section className='flex h-[400px]  justify-center mx-16 min-h-[900px] '>
+			<div className='flex h-full justify-between align-middle items-center'>
 				<div className='w-[60%] ml-10 text-white '>
-					<h1 className='text-3xl text-center mb-7 text-[#4b8d91]'>About</h1>
+					<h1 className='text-4xl text-center mb-7 text-[#4b8d91]'>About</h1>
 					<p className='mb-3 text-2xl'>
 						{`${Iam} a Front-End Web Developer. Passionate about technology, music, arts and games.`}
 					</p>
@@ -24,11 +24,12 @@ function About () {
 					<p className='mt-3 text-2xl'>I like challenges and solving problems!</p>
 				</div>
 				<img
-					className='h-80 rounded-full opacity-70 transition-[1s] hover:opacity-100 border border-[#588E91] mt-5 mx-auto'
-					src={Brnpic}
+					className='h-96 rounded-full opacity-70 transition-[1s] hover:opacity-100 shadow-[#588E91] shadow-lg mt-5 mx-auto'
+					src={test}
 					alt='BrunoPic'
 				/>
 			</div>
+			<span className="anchorAbout" id='ABOUT'></span>
 		</section>
 	)
 }
