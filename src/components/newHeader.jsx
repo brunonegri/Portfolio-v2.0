@@ -21,22 +21,38 @@ function NewHeader () {
 					<img src={menuicon} alt="menu" />
 				</button>
 				<nav className='hidden sm:flex md:w-[60%] lg:w-auto  text-white'>
-					<a href='#HOME'>
+					<a href='/' onClick={ e=>{ 
+						const home = document.getElementById('HOME')
+						e.preventDefault()
+						home && home.scrollIntoView()
+						}}>
 						<p className='mx-2 text-xl hover:text-[#437c80]'>
 							<span className='mr-1 text-sm text-[#588e91]'>01.</span>Home
 						</p>
 					</a>
-					<a href='#ABOUT'>
+					<a href='/' onClick={ e=>{ 
+						const about = document.getElementById('ABOUT')
+						e.preventDefault()
+						about && about.scrollIntoView()
+						}}>
 						<p className='mx-2 text-xl hover:text-[#437c80]'>
 							<span className='mr-1 text-sm text-[#588e91]'>02.</span>About
 						</p>
 					</a>
-					<a href='#EXPERIENCES'>
+					<a href='/' onClick={ e=>{ 
+						const xp = document.getElementById('EXPERIENCES')
+						e.preventDefault()
+						xp && xp.scrollIntoView()
+						}}>
 						<p className='mx-2 text-xl hover:text-[#437c80]'>
 							<span className='mr-1 text-sm text-[#588e91]'>03.</span>Experience
 						</p>
 					</a>
-					<a href='#PROJECTS'>
+					<a href='/' onClick={ e=>{ 
+						const projects = document.getElementById('PROJECTS')
+						e.preventDefault()
+						projects && projects.scrollIntoView()
+						}}>
 						<p className='mx-2 text-xl hover:text-[#437c80]'>
 							<span className='mr-1 text-sm text-[#588e91]'>04.</span>Projects
 						</p>
