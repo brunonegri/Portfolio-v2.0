@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0f069837.css",
+    "main.js": "/static/js/main.2dfc321f.js",
+    "static/media/GifBnWhite.gif": "/static/media/GifBnWhite.f1d0fffd240bff572eaa.gif",
+    "static/media/BackgroundFinal.png": "/static/media/BackgroundFinal.2efa17945f7e46a4496a.png",
+    "static/media/appreceitaimg.png": "/static/media/appreceitaimg.1ece0c89bb5cfd32103b.png",
+    "static/media/Resume.pdf": "/static/media/Resume.6273e5ea65f32161b947.pdf",
+    "static/media/test.png": "/static/media/test.b9112d2a2b23ee7ac629.png",
+    "static/media/BnWhite.png": "/static/media/BnWhite.8ca556bb26df3e655437.png",
+    "static/media/jestsvg.svg": "/static/media/jestsvg.6e0120c2a73a815c0b79ed0e6c971bdf.svg",
+    "static/media/redux.svg": "/static/media/redux.9112c4271d0bc69a0c204f4fcaba24a3.svg",
+    "index.html": "/index.html",
+    "static/media/tailwindicon.svg": "/static/media/tailwindicon.a2276d92908d539d237c2b1a00b28a55.svg",
+    "main.0f069837.css.map": "/static/css/main.0f069837.css.map",
+    "main.2dfc321f.js.map": "/static/js/main.2dfc321f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f069837.css",
+    "static/js/main.2dfc321f.js"
+  ]
+}
