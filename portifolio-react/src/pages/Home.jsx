@@ -17,10 +17,10 @@ function Home () {
 	}, [])
 
 	return (
-		<main >
+		<main className='min-w-full w-full'>
 			{load
 				? <Loading />
-				: <div className="drop-shadow-lg w-9/12 mx-auto">
+				: <div className="drop-shadow-lg w-full md:w-9/12 md:mx-auto">
 					<NewHeader />
 					<Hero />
 					<About />
