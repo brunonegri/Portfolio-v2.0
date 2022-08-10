@@ -1,32 +1,31 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faCircleArrowLeft, faCircleArrowRight, faLink } from '@fortawesome/free-solid-svg-icons'
 import projectsData from '../services/ProjectsData'
 
 function Projects () {
-	const carousel = useRef(null)
+	const [current, setCurrent] = useState(0)
+	const arrayLength = projectsData.length
 
-	const handleLeftClick = (e) => {
-		e.preventDefault()
-		console.log(carousel.current.offsetWidth)
-		carousel.current.scrollLeft -= carousel.current.offsetWidth
+	const handleLeftClick = () => {
+		setCurrent(current === 0 ? arrayLength - 1 : current - 1)
 	}
 
-	const handleRightClick = (e) => {
-		e.preventDefault()
-		console.log(carousel.current.offsetWidth)
-		carousel.current.scrollLeft += carousel.current.offsetWidth
+	const handleRightClick = () => {
+		setCurrent(current === arrayLength -1 ? 0 : current +1)
 	}
+
 	return (
 		<section className="min-h-[850px] mt-[90px] items-center">
 			<span className="anchorAbout" id='PROJECTS'></span>
 			<h1 className='text-4xl text-center mt-[190px] mb-9 text-[#4b8d91]'>Projects</h1>
 			<div className='flex items-center'>
 				<FontAwesomeIcon className='h-10 mr-5 text-white hover:text-[#437c80] transition-[0.5s] cursor-pointer' icon={faCircleArrowLeft} onClick={handleLeftClick }/>
-				{projectsData.map((e, i) =>
-					<div key={i} className="flex h-[400px] w-full justify-around bg-[#313740] drop-shadow-xl">
-						<div className="flex my-7 w-[40%] items-center justify-center ">
+				{projectsData.map((e, i) => 
+        i === current &&
+					<div key={i} className='flex h-[400px] w-full justify-around bg-[#313740] drop-shadow-xl'>
+						<div className="flex my-7 w-[45%] items-center justify-center ">
 							<img className='h-[100%]' src={e.thumb} alt="projectthumb" />
 						</div>
 						<div className=' w-[40%] text-3xl flex flex-col justify-center text-center mb-7'>

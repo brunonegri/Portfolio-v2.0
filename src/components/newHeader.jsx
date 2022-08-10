@@ -9,7 +9,7 @@ function NewHeader () {
 
 	return (
 		<div className={`sm:sticky ${scrollDirection === 'down' ? '-top-24' : 'top-[30px]'}  flex flex-nowrap w-full justify-between sm:justify-center  drop-shadow-lg h-24 bg-[#464E59] z-10 transition-all duration-500`}>
-			<div className='px-10 lg:px-60 flex  justify-between items-center w-full h-full'>
+			<div className='w-[80%] lg:w-[65%] flex mx-auto justify-between items-center w-full h-full'>
 				<a href="#HOME">
 					<img className='h-10 sm:h-20'
 						onClick={() => { window.location.reload() }}
