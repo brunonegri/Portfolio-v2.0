@@ -28,7 +28,7 @@ function Experience () {
 					<p className='text-xl'>Soon</p>
 					<p className='text-xl'>Feel free to checkout my projects below</p>
 				</div>
-				<div className='w-[49%]'>
+				<div className='w-[47%]'>
 					<h1 className=' mb-4 mt-14 justify-center text-4xl text-center text-[#4b8d91]'>
 						Skills
 					</h1>
@@ -39,7 +39,7 @@ function Experience () {
 							<div className='flex flex-nowrap align-middle'>
 								{iconsArray.map((e, i) =>
 									<FontAwesomeIcon key={i} icon={e}
-										className='h-24 ml-5 text-white hover:text-[#437c80] transition-all duration-500 hover:h-[99px]'
+										className='h-24 ml-8 text-white hover:text-[#437c80] transition-all duration-500 hover:h-[99px]'
 									/>
 								)}
 								<img className='svghover h-[90px] ml-5 transition-all duration-500 hover:h-[92px]' src={jestsvg} alt="stack" />
