@@ -20,7 +20,7 @@ function Experience () {
 	}
 
 	return (
-		<section className='flex mt-44 sm:mt-0 sm:min-h-[930px] flex-col items-center justify-center w-full '>
+		<section className='flex mt-96 sm:mt-0 sm:min-h-[930px] flex-col items-center justify-center w-full '>
 			<span className="anchorEx" id='EXPERIENCES'></span>
 			<div className='flex w-full flex-col justify-center mx-auto items-center'>
 				<div className='text-white text-center'>

@@ -19,7 +19,6 @@ body {
 
 @media only screen and (max-width: 639px) {
   body {
-    /* background: url('./data/images/BackgroundMobile.png'); */
     background: #313740;
   }
   .anchorEx{
@@ -56,31 +55,34 @@ body {
 }
 
 .icon {
+  /* top: 0; */
   position: absolute;
   z-index: 4;
   right: 1%;
   width: fit-content;
-  height: 44px;
+  height: 34px;
   cursor: pointer
 }
 
 .hamburguer {
-  /* top: 50%; */
-  right: 50px;
-  width: 34px;
-  height: 6px;
+  top: 50%;
+  right: 20px;
+  width: 30px;
+  height: 2px;
   background: white;
   position: absolute;
   box-shadow: 0 2px 5px rgba (0,0,0,0.2);
   transition: 0.5s;
+  /* line-height: 20px; */
 }
 
 .hamburguer::before {
   top: -12px;
+  right: 0px;
   content: '';
   position: absolute;
-  width: 37px;
-  height: 6px;
+  width: 30px;
+  height: 2px;
   background: white;
   box-shadow: 0 2px 5px rgba (0,0,0,0.2);
   transition: 0.5s;
@@ -88,10 +90,11 @@ body {
 
 .hamburguer::after {
   top: 12px;
+  right: 0px;
   content: '';
   position: absolute;
-  width: 37px;
-  height: 6px;
+  width: 30px;
+  height: 2px;
   background: white;
   box-shadow: 0 2px 5px rgba (0,0,0,0.2);
   transition: 0.5s;

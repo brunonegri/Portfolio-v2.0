@@ -8,8 +8,6 @@ function NewHeader () {
 	
 	const [active, setActive] = useState(false)
 	const [checkWidth, SetCheckWidth] = useState(false)
-	console.log(width);
-	console.log(checkWidth);
 
 	useEffect(()=>{
 		if(width < 640 ){
@@ -24,10 +22,13 @@ function NewHeader () {
 	const scrollDirection = useScrollDirection()
 
 	return (
-		<div className={`w-full sticky ${scrollDirection === 'down' ? '-top-24' : 'top-[30px]'}  flex flex-nowrap  justify-between sm:justify-center  drop-shadow-lg h-24 bg-[#464E59] z-10 transition-all duration-500`}>
+		<div className={`w-full sticky ${scrollDirection === 'down' ? '-top-24' : 'top-[30px]'} 
+		${active && checkWidth === true ? 'backdrop-blur-md bg-none -top-24 h-[4000px]' : ''}
+		flex flex-nowrap  justify-between sm:justify-center  drop-shadow-lg h-16 sm:h-24 bg-[#464E59] z-10 transition-all duration-500`}>
+			{/* {active && checkWidth === true && (<div className='absolute w-[600px] h-[4000px] backdrop-blur-xl'></div>)}  */}
 			<div className='w-[80%] lg:w-[65%] flex mx-auto justify-between items-center  h-full'>
 				<a href="#HOME">
-					<img className='h-16 sm:h-20'
+					<img className='h-12 sm:h-20'
 						onClick={() => { window.location.reload() }}
 						onMouseOver={e => (e.currentTarget.src = GifBnWhite)}
 						onMouseOut={e => (e.currentTarget.src = BnWhite)}
@@ -36,7 +37,7 @@ function NewHeader () {
 				<button className={`sm:hidden ${active && checkWidth ? 'icon iconActive' : 'icon'}`} onClick={handleToggle}>
 					<div className='hamburguer hamburgerIcon'></div>
 				</button>
-				<nav className= {`sm:flex lg:w-auto  backdrop-blur-md text-white ${active && checkWidth === true ? 'transition-all duration-500 inset-y-0 right-[1px] top-[-30px] h-[4000px] w-56 bg-black/80 absolute h-full' : 'hidden'}`}>
+				<nav className= {`sm:flex lg:w-auto  backdrop-blur-md text-white ${active && checkWidth === true ? 'transition-all duration-500 inset-y-0 right-[1px] top-[-30px] h-[4000px] w-[70%] bg-[#313740] absolute h-full' : 'hidden'}`}>
 					<a href='/' onClick={ e=>{ 
 						const home = document.getElementById('HOME')
 						e.preventDefault()
