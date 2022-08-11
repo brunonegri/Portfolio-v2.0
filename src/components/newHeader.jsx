@@ -23,7 +23,7 @@ function NewHeader () {
 				<button className={`sm:hidden ${active ? 'icon iconActive' : 'icon'}`} onClick={handleToggle}>
 					<div className='hamburguer hamburgerIcon'></div>
 				</button>
-				<nav className= {`sm:flex lg:w-auto  backdrop-blur-md text-white ${active ? 'inset-y-0 right-[1px] top-[-30px] h-[4000px] w-56 bg-black/80 absolute h-full' : 'hidden'}`}>
+				<nav className= {`sm:flex lg:w-auto  backdrop-blur-md text-white ${active ? 'transition-all duration-500 inset-y-0 right-[1px] top-[-30px] h-[4000px] w-56 bg-black/80 absolute h-full' : 'hidden'}`}>
 					<a href='/' onClick={ e=>{ 
 						const home = document.getElementById('HOME')
 						e.preventDefault()

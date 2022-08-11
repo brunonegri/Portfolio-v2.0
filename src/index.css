@@ -17,6 +17,13 @@ body {
     min-height: 100%;
 }
 
+@media only screen and (max-width: 639px) {
+  body {
+    /* background: url('./data/images/BackgroundMobile.png'); */
+    background: #313740;
+  }
+}
+
 .svghover:hover {
     filter: invert(45%) sepia(39%) saturate(402%) hue-rotate(135deg) brightness(89%) contrast(96%);
 }
