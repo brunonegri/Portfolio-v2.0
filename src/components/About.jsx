@@ -8,7 +8,7 @@ function About () {
 	const Iam = "I'm"
 	return (
 		<section className='flex h-[400px]  justify-center mx-16 min-h-[900px] '>
-			<div className='flex h-full justify-between align-middle items-center'>
+			<div className='flex flex-col sm:flex-row h-full justify-between align-middle items-center'>
 				<div className='w-[60%] ml-10 text-white '>
 					<h1 className='text-4xl text-center mb-7 text-[#4b8d91]'>About</h1>
 					<p className='mb-3 text-2xl'>

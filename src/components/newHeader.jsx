@@ -8,8 +8,8 @@ function NewHeader () {
 	const scrollDirection = useScrollDirection()
 
 	return (
-		<div className={`sm:sticky ${scrollDirection === 'down' ? '-top-24' : 'top-[30px]'}  flex flex-nowrap w-full justify-between sm:justify-center  drop-shadow-lg h-24 bg-[#464E59] z-10 transition-all duration-500`}>
-			<div className='w-[80%] lg:w-[65%] flex mx-auto justify-between items-center w-full h-full'>
+		<div className={`w-full sm:sticky ${scrollDirection === 'down' ? '-top-24' : 'top-[30px]'}  flex flex-nowrap  justify-between sm:justify-center  drop-shadow-lg h-24 bg-[#464E59] z-10 transition-all duration-500`}>
+			<div className='w-[80%] lg:w-[65%] flex mx-auto justify-between items-center  h-full'>
 				<a href="#HOME">
 					<img className='h-10 sm:h-20'
 						onClick={() => { window.location.reload() }}
@@ -20,7 +20,7 @@ function NewHeader () {
 				<button className='sm:hidden'>
 					<img src={menuicon} alt="menu" />
 				</button>
-				<nav className='hidden sm:flex md:w-[60%] lg:w-auto  text-white'>
+				<nav className='hidden sm:flex lg:w-auto  text-white'>
 					<a href='/' onClick={ e=>{ 
 						const home = document.getElementById('HOME')
 						e.preventDefault()

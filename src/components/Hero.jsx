@@ -8,7 +8,7 @@ function Hero () {
 	return (
 		<section className='min-h-[870px] flex items-center'>
 			<span className="anchor" id='HOME'></span>
-			<div className='mx-48'>
+			<div className='mx-auto sm:ml-48'>
 				<div>
 					<p className='text-2xl text-white'>{Iam}</p>
 					<h4 className='text-[86px] text-[#4b8d91]'>Bruno Negri</h4>

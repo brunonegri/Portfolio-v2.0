@@ -17,7 +17,7 @@ function Home () {
 	}, [])
 
 	return (
-		<main className='min-w-full w-full'>
+		<main className='w-full flex justify-center items-center'>
 			{load
 				? <Loading />
 				: <div className="drop-shadow-lg w-full md:w-9/12 md:mx-auto">
