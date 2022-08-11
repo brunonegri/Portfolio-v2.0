@@ -20,16 +20,16 @@ function Experience () {
 	}
 
 	return (
-		<section className='flex min-h-[930px] flex-col items-center justify-center w-full '>
+		<section className='flex mt-44 sm:mt-0 sm:min-h-[930px] flex-col items-center justify-center w-full '>
 			<span className="anchorEx" id='EXPERIENCES'></span>
 			<div className='flex w-full flex-col justify-center mx-auto items-center'>
 				<div className='text-white text-center'>
-					<h1 className=' mb-4 mt-[70px] justify-center text-4xl text-[#4b8d91]'>Experiences</h1>
+					<h1 className=' mb-4 sm:mt-[70px] justify-center text-4xl text-[#4b8d91]'>Experiences</h1>
 					<p className='text-xl'>Soon</p>
 					<p className='text-xl'>Feel free to checkout my projects below</p>
 				</div>
-				<div className='w-[47%]'>
-					<h1 className=' mb-4 mt-14 justify-center text-4xl text-center text-[#4b8d91]'>
+				<div className='w-full sm:w-[47%]'>
+					<h1 className='mb-16 sm:mb-4 mt-14 justify-center text-4xl text-center text-[#4b8d91]'>
 						Skills
 					</h1>
 					<div className='flex justify-center items-center'>
@@ -39,7 +39,7 @@ function Experience () {
 							<div className='flex flex-nowrap align-middle'>
 								{iconsArray.map((e, i) =>
 									<FontAwesomeIcon key={i} icon={e}
-										className='h-24 ml-8 text-white hover:text-[#437c80] transition-all duration-500 hover:h-[99px]'
+										className='h-24 ml-4 sm:ml-8 text-white hover:text-[#437c80] transition-all duration-500 hover:h-[99px]'
 									/>
 								)}
 								<img className='svghover h-[90px] ml-5 transition-all duration-500 hover:h-[92px]' src={jestsvg} alt="stack" />

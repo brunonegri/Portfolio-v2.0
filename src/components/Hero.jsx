@@ -6,12 +6,12 @@ import Resume from '../data/Resume.pdf'
 function Hero () {
 	const Iam = "Hello, I'm"
 	return (
-		<section className='min-h-[870px] flex items-center'>
+		<section className='h-[700px] sm:min-h-[870px] flex items-center mb-36 sm:mb-0'>
 			<span className="anchor" id='HOME'></span>
-			<div className='mx-auto sm:ml-48'>
+			<div className='ml-4 sm:ml-48'>
 				<div>
 					<p className='text-2xl text-white'>{Iam}</p>
-					<h4 className='text-[86px] text-[#4b8d91]'>Bruno Negri</h4>
+					<h4 className='text-6xl sm:text-[86px] text-[#4b8d91]'>Bruno Negri</h4>
 					<p className='text-2xl text-white mt-2'>
           FULL STACK WEB DEVELOPER
 					</p>

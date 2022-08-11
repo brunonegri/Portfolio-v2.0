@@ -22,6 +22,12 @@ body {
     /* background: url('./data/images/BackgroundMobile.png'); */
     background: #313740;
   }
+  .anchorEx{
+    display: block;
+    height: 5px; /*same height as header*/
+    margin-top: -5px; /*same height as header*/
+    visibility: hidden;
+  }
 }
 
 .svghover:hover {
