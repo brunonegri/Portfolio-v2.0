@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faCircleArrowLeft, faCircleArrowRight, faLink } from '@fortawesome/free-solid-svg-icons'
 import projectsData from '../services/ProjectsData'
 
 function Projects () {
+	const { t } = useTranslation()
 	const [current, setCurrent] = useState(0)
 	const arrayLength = projectsData.length
 
@@ -19,7 +21,7 @@ function Projects () {
 	return (
 		<section className="sm:min-h-[850px] mb-20 sm:mb-0 mt-[90px] items-center">
 			<span className="anchorAbout" id='PROJECTS'></span>
-			<h1 className='text-4xl text-center mt-[190px] mb-5 sm:mb-9 text-[#4b8d91]'>Projects</h1>
+			<h1 className='text-4xl text-center mt-[190px] mb-5 sm:mb-9 text-[#4b8d91]'>{t('projects.1')}</h1>
 			<div className='flex items-center'>
 				<FontAwesomeIcon className='h-10 mr-5 text-white hover:text-[#437c80] transition-[0.5s] cursor-pointer' icon={faCircleArrowLeft} onClick={handleLeftClick }/>
 				{projectsData.map((e, i) => 

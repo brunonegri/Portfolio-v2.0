@@ -1,0 +1,28 @@
+{
+    "nav": {
+        "1": "Sobre",
+        "2": "Experiências",
+        "3": "Projetos",
+        "4": "Contato"
+    },
+    "hero": {
+        "1": "Olá, Eu sou",
+        "2": "Desenvolvedor Web FullStack",
+        "3": "Curriculo"
+    },
+    "about": {
+        "1": "Sobre",
+        "2": "Eu sou desenvolvedor Web FullStack. Apaixonado por tecnologia, música, artes e jogos.",
+        "3": "Estudo Desenvolvimento Web Fullstack na Trybe, tive a honra de conhecer professores excepcionais dos quais obtive muito conhecimento na área, liderei e desenvolvi alguns projetos em equipe aprimorando minha criatividade e hoje busco oportunidade para colocar em pratica tudo oque eu aprendi.",
+        "4": "Gosto de desafios e de solucionar problemas!"
+    },
+    "experience": {
+        "1": "Experiências",
+        "2": "Em Breve",
+        "3": "Veja meus Projetos abaixo",
+        "4": "Habilidades"
+    },
+    "projects": {
+        "1": "Projetos"
+    }
+}

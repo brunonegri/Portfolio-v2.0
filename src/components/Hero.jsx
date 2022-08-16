@@ -1,25 +1,26 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import Resume from '../data/Resume.pdf'
 
 function Hero () {
-	const Iam = "Hello, I'm"
+	const { t } = useTranslation()
 	return (
 		<section className='h-[700px] sm:min-h-[870px] flex items-center mb-36 sm:mb-0'>
 			<span className="anchor" id='HOME'></span>
 			<div className='ml-4 sm:ml-48'>
 				<div>
-					<p className='text-2xl text-white'>{Iam}</p>
+					<p className='text-2xl text-white'>{t('hero.1')}</p>
 					<h4 className='text-6xl sm:text-[86px] text-[#4b8d91]'>Bruno Negri</h4>
 					<p className='text-2xl text-white mt-2'>
-          FULL STACK WEB DEVELOPER
+					{t('hero.2')}
 					</p>
 				</div>
 				<a href={Resume} target='_blank' rel="noreferrer">
 					<button
 						className="px-7 py-3 opacity-60 bg-[#437c80] hover:opacity-100 hover:px-8 hover:py-[14px] transition-[0.5s] rounded-md text-white text-[18px] ml-3 mt-6">
-          Download Resume
+          			{t('hero.3')}
 					</button>
 				</a>
 				<div className="mt-7">

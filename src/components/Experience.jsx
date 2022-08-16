@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowLeft, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'
 import jestsvg from '../data/images/jestsvg.svg'
@@ -7,6 +8,7 @@ import redux from '../data/images/redux.svg'
 import tailwindicon from '../data/images/tailwindicon.svg'
 
 function Experience () {
+	const { t } = useTranslation()
 	const carousel = useRef(null)
 
 	const handleLeftClick = (e) => {
@@ -24,13 +26,13 @@ function Experience () {
 			<span className="anchorEx" id='EXPERIENCES'></span>
 			<div className='flex w-full flex-col justify-center mx-auto items-center'>
 				<div className='text-white text-center'>
-					<h1 className=' mb-4 sm:mt-[70px] justify-center text-4xl text-[#4b8d91]'>Experiences</h1>
-					<p className='text-xl'>Soon</p>
-					<p className='text-xl'>Feel free to checkout my projects below</p>
+					<h1 className=' mb-4 sm:mt-[70px] justify-center text-4xl text-[#4b8d91]'>{t('experience.1')}</h1>
+					<p className='text-xl'>{t('experience.2')}</p>
+					<p className='text-xl'>{t('experience.3')}</p>
 				</div>
 				<div className='w-full sm:w-[47%]'>
 					<h1 className='mb-16 sm:mb-4 mt-14 justify-center text-4xl text-center text-[#4b8d91]'>
-						Skills
+					{t('experience.4')}
 					</h1>
 					<div className='flex justify-center items-center'>
 						<FontAwesomeIcon className='h-10 cursor-pointer mr-5 text-white hover:text-[#437c80] transition-all duration-500' icon={faCircleArrowLeft} onClick={handleLeftClick }/>

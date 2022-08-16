@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import useScrollDirection from '../services/scrollhook'
 import GifBnWhite from '../data/images/GifBnWhite.gif'
 import BnWhite from '../data/images/BnWhite.png'
 
 function NewHeader () {
 	const { innerWidth: width } = window;
-	
+	const { t, i18n } = useTranslation()
 	const [active, setActive] = useState(false)
 
 	const checkWidth = width < 640 ? true : false 
@@ -14,13 +15,17 @@ function NewHeader () {
 			setActive(!active)	
 	}
 
+	const handleChange = ({target}) => {
+		const {value} = target
+		i18n.changeLanguage(value)
+	}
+
 	const scrollDirection = useScrollDirection()
 
 	return (
 		<div className={`w-full sticky ${scrollDirection === 'down' ? '-top-24' : 'top-[30px]'} 
 		${active && checkWidth === true ? 'backdrop-blur-md bg-none -top-24 h-[4000px]' : ''}
 		flex flex-nowrap  justify-between sm:justify-center  drop-shadow-lg h-16 sm:h-24 bg-[#464E59] z-10 transition-all duration-500`}>
-			{/* {active && checkWidth === true && (<div className='absolute w-[600px] h-[4000px] backdrop-blur-xl'></div>)}  */}
 			<div className='w-[80%] lg:w-[65%] flex mx-auto justify-between items-center  h-full'>
 				<a href="#HOME">
 					<img className='h-12 sm:h-20'
@@ -32,25 +37,20 @@ function NewHeader () {
 				<button className={`sm:hidden ${active && checkWidth ? 'icon iconActive' : 'icon'}`} onClick={handleToggle}>
 					<div className='hamburguer hamburgerIcon'></div>
 				</button>
-				<nav className= {`sm:flex lg:w-auto  backdrop-blur-md text-white ${active && checkWidth === true ? 'transition-all duration-500 inset-y-0 right-[1px] top-[-30px] h-[4000px] w-[70%] bg-[#313740] absolute h-full' : 'hidden'}`}>
-					<a href='/' onClick={ e=>{ 
-						const home = document.getElementById('HOME')
-						e.preventDefault()
-						home && home.scrollIntoView()
-						setActive(!active)
-						}}>
-						<p className='ml-[30px] mt-[150px] sm:mx-2 sm:mt-0  text-xl hover:text-[#437c80]'>
-							<span className='mr-1 text-sm text-[#588e91]'>01.</span>Home
-						</p>
-					</a>
+				<nav className= {`sm:flex lg:w-auto sm:h-full sm:items-center  backdrop-blur-md text-white ${active && checkWidth === true ? 'transition-all duration-500 inset-y-0 right-[1px] top-[-30px] h-[4000px] w-[70%] bg-[#313740] absolute' : 'hidden'}`}>
+				<select className="bg-transparent absolute top-[50px] left-[20px] sm:hidden" name="language" id="language" onChange={handleChange}>
+						<option className="bg-[#464E59]" value="pt-BR">🇧🇷</option>
+						<option className="bg-[#464E59]" value="en">🇬🇧</option>
+					</select>
 					<a href='/' onClick={ e=>{ 
 						const about = document.getElementById('ABOUT')
 						e.preventDefault()
 						about && about.scrollIntoView()
 						setActive(!active)
 						}}>
-						<p className='ml-[30px] sm:mx-2 sm:mt-0 text-xl hover:text-[#437c80]'>
-							<span className='mr-1 text-sm text-[#588e91]'>02.</span>About
+						<p className='ml-[30px] mt-[150px] sm:mx-2 sm:mt-0 text-xl hover:text-[#437c80]'>
+							<span className='mr-1 text-sm text-[#588e91]'>01.</span>
+							{t('nav.1')}
 						</p>
 					</a>
 					<a href='/' onClick={ e=>{ 
@@ -60,7 +60,8 @@ function NewHeader () {
 						setActive(!active)
 						}}>
 						<p className='ml-[30px] sm:mx-2 sm:mt-0 text-xl hover:text-[#437c80]'>
-							<span className='mr-1 text-sm text-[#588e91]'>03.</span>Experience
+							<span className='mr-1 text-sm text-[#588e91]'>02.</span>
+							{t('nav.2')}
 						</p>
 					</a>
 					<a href='/' onClick={ e=>{ 
@@ -70,11 +71,32 @@ function NewHeader () {
 						setActive(!active)
 						}}>
 						<p className='ml-[30px] sm:mx-2 sm:mt-0 text-xl hover:text-[#437c80]'>
-							<span className='mr-1 text-sm text-[#588e91]'>04.</span>Projects
+							<span className='mr-1 text-sm text-[#588e91]'>03.</span>
+							{t('nav.3')}
 						</p>
 					</a>
+					<a href='/' onClick={ e=>{ 
+						const home = document.getElementById('Contact')
+						e.preventDefault()
+						home && home.scrollIntoView()
+						setActive(!active)
+						}}>
+						<p className='ml-[30px] sm:mx-2 sm:mt-0  text-xl hover:text-[#437c80]'>
+							<span className='mr-1 text-sm text-[#588e91]'>04.</span>
+							{t('nav.4')}
+						</p>
+					</a>
+					
 				</nav>
 			</div>
+			{!checkWidth && 
+			<div>
+				<select className="sm:bg-transparent text-white absolute top-[10px] right-[20px]" name="language" id="language" onChange={handleChange}>
+					<option className="bg-[#464E59]" value="pt-BR">🇧🇷</option>
+					<option className="bg-[#464E59]" value="en">🇬🇧</option>
+				</select>
+			</div>
+			}
 		</div>
 	)
 };

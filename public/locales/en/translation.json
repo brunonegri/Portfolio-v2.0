@@ -1,0 +1,28 @@
+{
+    "nav": {
+        "1": "About",
+        "2": "Experiences",
+        "3": "Projects",
+        "4": "Contact"
+    },
+    "hero": {
+        "1": "Hello, I'm",
+        "2": "FullStack Web Developer",
+        "3": "Resume"
+    },
+    "about": {
+        "1": "About",
+        "2": "I'm a Full Stack Web Developer. Passionate about technology, music, arts and games.",
+        "3": "I study Development Web Full stack at Trybe, I had the honor to meeting exceptional teachers from whom I gained a lot of knowledge in the area, I led developed some team projects improving my logic and creativity, today I look for the opportunity to put in practice everything I learned.",
+        "4": "I like challenges and solving problems!"
+    },
+    "experience": {
+        "1": "Experiences",
+        "2": "Soon",
+        "3": "Check my projects below",
+        "4": "Skills"
+    },
+    "projects": {
+        "1": "Projects"
+    }
+}
