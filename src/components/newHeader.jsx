@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import useScrollDirection from '../services/scrollhook'
 import GifBnWhite from '../data/images/GifBnWhite.gif'
 import BnWhite from '../data/images/BnWhite.png'
@@ -7,13 +7,8 @@ function NewHeader () {
 	const { innerWidth: width } = window;
 	
 	const [active, setActive] = useState(false)
-	const [checkWidth, SetCheckWidth] = useState(false)
 
-	useEffect(()=>{
-		if(width < 640 ){
-		 SetCheckWidth(!checkWidth)
-		}
-	 },[])
+	const checkWidth = width < 640 ? true : false 
 
 	const handleToggle = () => {
 			setActive(!active)	
