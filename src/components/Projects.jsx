@@ -9,7 +9,6 @@ import {projectsEN, projectsPTBR} from '../services/ProjectsData'
 function Projects ({lang}) {
 	const { t } = useTranslation()
 	const [current, setCurrent] = useState(0)
-	console.log(lang);
 	const projectsData = lang === 'pt-BR' ? projectsPTBR :  projectsEN
 
 	const arrayLength = projectsEN.length

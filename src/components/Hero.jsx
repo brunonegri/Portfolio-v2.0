@@ -1,11 +1,15 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import {connect} from 'react-redux'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import Resume from '../data/Resume.pdf'
+import ResumePTBR from '../data/ResumePTBR.pdf'
+import ResumeEN from '../data/ResumeEN.pdf'
 
-function Hero () {
+function Hero ({lang}) {
 	const { t } = useTranslation()
+	console.log(lang);
+	const Resume = lang === 'pt-BR' ? ResumePTBR : ResumeEN
 	return (
 		<section className='h-[700px] sm:min-h-[870px] flex items-center mb-36 sm:mb-0'>
 			<span className="anchor" id='HOME'></span>
@@ -17,7 +21,7 @@ function Hero () {
 					{t('hero.2')}
 					</p>
 				</div>
-				<a href={Resume} target='_blank' rel="noreferrer">
+				<a href={ Resume } target='_blank' rel="noreferrer">
 					<button
 						className="px-7 py-3 opacity-60 bg-[#437c80] hover:opacity-100 hover:px-8 hover:py-[14px] transition-[0.5s] rounded-md text-white text-[18px] ml-3 mt-6">
           			{t('hero.3')}
@@ -45,4 +49,8 @@ function Hero () {
 	)
 }
 
-export default Hero
+const mapStateToProps = (state) => ({
+	lang: state.lang.language
+})
+
+export default connect(mapStateToProps)(Hero)
