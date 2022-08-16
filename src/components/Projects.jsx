@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {connect} from 'react-redux'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faCircleArrowLeft, faCircleArrowRight, faLink } from '@fortawesome/free-solid-svg-icons'
-import projectsData from '../services/ProjectsData'
+import {projectsEN, projectsPTBR} from '../services/ProjectsData'
 
-function Projects () {
+function Projects ({lang}) {
 	const { t } = useTranslation()
 	const [current, setCurrent] = useState(0)
-	const arrayLength = projectsData.length
+	console.log(lang);
+	const projectsData = lang === 'pt-BR' ? projectsPTBR :  projectsEN
+
+	const arrayLength = projectsEN.length
 
 	const handleLeftClick = () => {
 		setCurrent(current === 0 ? arrayLength - 1 : current - 1)
@@ -51,4 +55,8 @@ function Projects () {
 	)
 }
 
-export default Projects
+const mapStateToProps = (state) => ({
+	lang: state.lang.language
+})
+
+export default connect(mapStateToProps)(Projects)

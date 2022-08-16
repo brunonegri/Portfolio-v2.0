@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import {connect} from 'react-redux'
+import { setLang } from '../redux/actions'
 import useScrollDirection from '../services/scrollhook'
 import GifBnWhite from '../data/images/GifBnWhite.gif'
 import BnWhite from '../data/images/BnWhite.png'
 
-function NewHeader () {
+function NewHeader ({dispatchLang}) {
 	const { innerWidth: width } = window;
 	const { t, i18n } = useTranslation()
 	const [active, setActive] = useState(false)
@@ -17,6 +19,7 @@ function NewHeader () {
 
 	const handleChange = ({target}) => {
 		const {value} = target
+		dispatchLang(value)
 		i18n.changeLanguage(value)
 	}
 
@@ -76,7 +79,7 @@ function NewHeader () {
 						</p>
 					</a>
 					<a href='/' onClick={ e=>{ 
-						const home = document.getElementById('Contact')
+						const home = document.getElementById('HOME')
 						e.preventDefault()
 						home && home.scrollIntoView()
 						setActive(!active)
@@ -100,4 +103,9 @@ function NewHeader () {
 		</div>
 	)
 };
-export default NewHeader
+
+const mapDispatchToProps = (dispatch) => ({
+	dispatchLang: (language) => dispatch(setLang(language))
+})
+
+export default connect(null,mapDispatchToProps)(NewHeader)
