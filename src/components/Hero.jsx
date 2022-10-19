@@ -8,7 +8,6 @@ import ResumeEN from '../data/ResumeEN.pdf'
 
 function Hero ({lang}) {
 	const { t } = useTranslation()
-	console.log(lang);
 	const Resume = lang === 'pt-BR' ? ResumePTBR : ResumeEN
 	return (
 		<section className='h-[700px] sm:min-h-[870px] flex items-center mb-36 sm:mb-0'>
